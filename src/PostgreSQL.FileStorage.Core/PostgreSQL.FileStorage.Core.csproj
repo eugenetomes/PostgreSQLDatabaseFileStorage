@@ -21,6 +21,9 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
 	<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <LangVersion>10.0</LangVersion>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,6 +36,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Npgsql" Version="7.0.2" />
 	<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
@@ -41,6 +51,8 @@
   <ItemGroup>
     <None Update="LICENSE.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
