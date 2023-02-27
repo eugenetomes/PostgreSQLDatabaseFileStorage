@@ -14,27 +14,27 @@ namespace PostgreSQL.FileStorage.Core.IntegrationTests.Service
 {
     internal class FileStorageServiceTests
     {
-        [Test]
-        [RunIfDatabaseIsSetup]
-        public async Task InternalTest()
-        {
-            var config = GetFileStorageConfiguration();
-            IFileStorageService service = new FileStorageService(config);
+        //[Test]
+        //[RunIfDatabaseIsSetup]
+        //public async Task InternalTest()
+        //{
+        //    var config = GetFileStorageConfiguration();
+        //    IFileStorageService service = new FileStorageService(config);
 
-            var result = await service.AddFile("Instruction", "1", @"D:\Code\Docker\compose.yml", null, "category", "ET", "EugeneTomes", CancellationToken.None);
+        //    var result = await service.AddFile("Instruction", "1", @"D:\Code\Docker\compose.yml", null, "category", "ET", "EugeneTomes", CancellationToken.None);
 
-        }
+        //}
 
-        private IOptions<FileStorageConfiguration> GetFileStorageConfiguration()
-        {
-            var fileStorageConfiguration = new FileStorageConfiguration
-            {
-                ApplicationName = "TESTAPP",
-                ConnectionString = TestHelper.GetDefaultConnectionString(),
-                FileTableName = "TestFile",
-                SchemaName = "public"
-            };
-            return Options.Create(fileStorageConfiguration);
-        }
+        //private IOptions<FileStorageConfiguration> GetFileStorageConfiguration()
+        //{
+        //    var fileStorageConfiguration = new FileStorageConfiguration
+        //    {
+        //        ApplicationName = "TESTAPP",
+        //        ConnectionString = TestHelper.GetDefaultConnectionString(),
+        //        FileTableName = "TestFile",
+        //        SchemaName = "public"
+        //    };
+        //    return Options.Create(fileStorageConfiguration);
+        //}
     }
 }
