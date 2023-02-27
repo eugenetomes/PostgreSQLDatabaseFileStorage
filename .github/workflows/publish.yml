@@ -1,4 +1,4 @@
-name: publish SharedKernel to NuGet.org
+name: publish PostgreSQLDatabaseFileStorage to NuGet.org
 on:
   push:
     branches:
