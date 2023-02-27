@@ -11,7 +11,7 @@ namespace PostgreSQL.FileStorage.Core.IntegrationTests
 
         public static bool RunIfDatabaseIsSetup()
         {
-            return true;
+            return false;
         }
     }
 }
