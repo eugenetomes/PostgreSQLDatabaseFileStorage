@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 	<PackageId>PostgreSQL.FileStorage</PackageId>
 	<Title>PostgreSQL.FileStorage</Title>
-	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<Authors>Eugene Tomes</Authors>
 	<Company>TomesDev</Company>
 	<PackageProjectUrl>https://github.com/eugenetomes/PostgreSQLDatabaseFileStorage</PackageProjectUrl>
@@ -15,7 +15,7 @@
 	<RepositoryUrl>https://github.com/eugenetomes/PostgreSQLDatabaseFileStorage</RepositoryUrl>
 	<PackageTags>aspnet asp.net aspnetcore asp.net core postgresql filestorage</PackageTags>
 	<PackageReleaseNotes>Initial Package.</PackageReleaseNotes>
-	<Version>1.0.3</Version>
+	<Version>1.0.2</Version>
 	<AssemblyName>PostgreSQL.FileStorage.Core</AssemblyName>
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
