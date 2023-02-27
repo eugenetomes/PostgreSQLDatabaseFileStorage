@@ -40,13 +40,14 @@ namespace PostgreSQL.FileStorage.Core.IntegrationTests.Internal.Service
         //    resultExists.Should().BeTrue();
         //}
 
-        [Test]
-        public async Task InternalText()
-        {
-            var databaseService = new CreateDatabaseTablesService(TestHelper.GetDefaultConnectionString());
-            await databaseService.CreateFileStorageTableIfNotExists("public", "ETCodeTest");
+        //[Test]
+        //[RunIfDatabaseIsSetup]
+        //public async Task InternalText()
+        //{
+        //    var databaseService = new CreateDatabaseTablesService(TestHelper.GetDefaultConnectionString());
+        //    await databaseService.CreateFileStorageTableIfNotExists("public", "ETCodeTest");
 
-        }
+        //}
 
     }
 }
