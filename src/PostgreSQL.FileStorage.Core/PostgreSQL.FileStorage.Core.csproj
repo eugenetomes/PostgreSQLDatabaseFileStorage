@@ -15,7 +15,7 @@
 	<RepositoryUrl>https://github.com/eugenetomes/PostgreSQLDatabaseFileStorage</RepositoryUrl>
 	<PackageTags>aspnet asp.net aspnetcore asp.net core postgresql filestorage</PackageTags>
 	<PackageReleaseNotes>Initial Package.</PackageReleaseNotes>
-	<Version>1.0.3</Version>
+	<Version>1.0.5</Version>
 	<AssemblyName>PostgreSQL.FileStorage.Core</AssemblyName>
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
