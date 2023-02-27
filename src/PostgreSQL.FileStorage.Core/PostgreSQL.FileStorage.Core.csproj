@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<PackageId>PostgreSQL.FileStorage</PackageId>
+	<Title>PostgreSQL.FileStorage</Title>
+	<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	<Authors>Eugene Tomes</Authors>
+	<Company>TomesDev</Company>
+	<PackageProjectUrl>https://github.com/eugenetomes/PostgreSQLDatabaseFileStorage</PackageProjectUrl>
+	<Description>A Package that facilitates the creation of File Records and contents in a PostgreSQL Database.</Description>
+	<Summary>Includes functionality to stored files in a Database.</Summary>
+	<RepositoryUrl>https://github.com/eugenetomes/PostgreSQLDatabaseFileStorage</RepositoryUrl>
+	<PackageTags>aspnet asp.net aspnetcore asp.net core postgresql filestorage</PackageTags>
+	<PackageReleaseNotes>Initial Package.</PackageReleaseNotes>
+	<Version>1.0.0</Version>
+	<AssemblyName>PostgreSQL.FileStorage.Core</AssemblyName>
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+	<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <LangVersion>10.0</LangVersion>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+		  <_Parameter1>PostgreSQL.FileStorage.Core.UnitTests</_Parameter1>
+	  </AssemblyAttribute>
+	  <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+		  <_Parameter1>PostgreSQL.FileStorage.Core.IntegrationTests</_Parameter1>
+	  </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Npgsql" Version="7.0.2" />
+	<PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{58740933-1D58-45B3-86F4-93548E4BC047}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB8F3E49-940F-4E74-BA70-39B7A3E45967}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSQL.FileStorage.Core", "src\PostgreSQL.FileStorage.Core\PostgreSQL.FileStorage.Core.csproj", "{6E69958E-3DEA-4D76-A99C-EEFB12F0C38D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSQL.FileStorage.Core.UnitTests", "tests\PostgreSQL.FileStorage.Core.UnitTests\PostgreSQL.FileStorage.Core.UnitTests.csproj", "{2B4E8417-BA1C-4576-B3D4-A1D988F4D6AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSQL.FileStorage.Core.IntegrationTests", "tests\PostgreSQL.FileStorage.Core.IntegrationTests\PostgreSQL.FileStorage.Core.IntegrationTests.csproj", "{847B5853-BB37-4CFF-ACBC-C26E8CBAD15B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E69958E-3DEA-4D76-A99C-EEFB12F0C38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E69958E-3DEA-4D76-A99C-EEFB12F0C38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E69958E-3DEA-4D76-A99C-EEFB12F0C38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E69958E-3DEA-4D76-A99C-EEFB12F0C38D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4E8417-BA1C-4576-B3D4-A1D988F4D6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4E8417-BA1C-4576-B3D4-A1D988F4D6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4E8417-BA1C-4576-B3D4-A1D988F4D6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4E8417-BA1C-4576-B3D4-A1D988F4D6AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{847B5853-BB37-4CFF-ACBC-C26E8CBAD15B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847B5853-BB37-4CFF-ACBC-C26E8CBAD15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847B5853-BB37-4CFF-ACBC-C26E8CBAD15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847B5853-BB37-4CFF-ACBC-C26E8CBAD15B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E69958E-3DEA-4D76-A99C-EEFB12F0C38D} = {58740933-1D58-45B3-86F4-93548E4BC047}
+		{2B4E8417-BA1C-4576-B3D4-A1D988F4D6AF} = {CB8F3E49-940F-4E74-BA70-39B7A3E45967}
+		{847B5853-BB37-4CFF-ACBC-C26E8CBAD15B} = {CB8F3E49-940F-4E74-BA70-39B7A3E45967}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B58669C-141B-4F7C-89F4-CE6758986903}
+	EndGlobalSection
+EndGlobal
