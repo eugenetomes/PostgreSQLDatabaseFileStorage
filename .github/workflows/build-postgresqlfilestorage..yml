@@ -1,0 +1,30 @@
+name: .NET Core Build and Test
+
+on:
+  workflow_dispatch:
+    branches: [ main ]
+    paths: [ 'src/**' ]
+  push:
+    branches: [ main ]
+    paths: [ 'src/**' ]
+  pull_request:
+    branches: [ main, dev ]
+    paths: [ 'src/**' ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v2.1.0
+      with:
+        dotnet-version: 6.0
+    - name: Install dependencies
+      run: dotnet restore PostgreSQLDatabaseFileStorage.sln
+    - name: Build
+      run: dotnet build --configuration Release --no-restore PostgreSQLDatabaseFileStorage.sln
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal PostgreSQLDatabaseFileStorage.sln
