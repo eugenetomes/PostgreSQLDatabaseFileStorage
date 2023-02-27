@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static PostgreSQL.FileStorage.Core.IntegrationTests.InitialSetup;
 
 namespace PostgreSQL.FileStorage.Core.IntegrationTests.Service
 {

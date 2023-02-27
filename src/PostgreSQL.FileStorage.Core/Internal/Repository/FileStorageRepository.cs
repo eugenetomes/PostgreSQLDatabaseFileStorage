@@ -66,7 +66,7 @@ namespace PostgreSQL.FileStorage.Core.Internal.Repository
 
         public async Task Delete(Guid id, CancellationToken cancellationToken)
         {
-            string commandText = $"Delete {_schema}.{_tableName} where Id = @id";
+            string commandText = $"Delete From {_schema}.{_tableName} where Id = @id";
 
             await using (var cmd = new NpgsqlCommand(commandText, _connection))
             {
