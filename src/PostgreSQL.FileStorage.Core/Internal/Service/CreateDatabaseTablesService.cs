@@ -25,7 +25,7 @@ namespace PostgreSQL.FileStorage.Core.Internal.Service
         public async Task<bool> SchemaExists(string schemaName)
         {
             string commandText = $"SELECT nspname FROM pg_catalog.pg_namespace where Upper(nspname) = upper(@schemaName) ORDER BY nspname Limit 1;";
-            var queryArgs = new { SchemaName = schemaName };
+            var queryArgs = new { schemaName = schemaName };
 
             var result = await _connection.QueryFirstOrDefaultAsync<string>(commandText, queryArgs);
             if (result == default)

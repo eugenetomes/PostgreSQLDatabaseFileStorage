@@ -14,8 +14,8 @@
 	<Summary>Includes functionality to stored files in a Database.</Summary>
 	<RepositoryUrl>https://github.com/eugenetomes/PostgreSQLDatabaseFileStorage</RepositoryUrl>
 	<PackageTags>aspnet asp.net aspnetcore asp.net core postgresql filestorage</PackageTags>
-	<PackageReleaseNotes>Initial Package.</PackageReleaseNotes>
-	<Version>1.0.5</Version>
+	<PackageReleaseNotes>Revert Npgsql dependency to 6</PackageReleaseNotes>
+	<Version>1.0.6</Version>
 	<AssemblyName>PostgreSQL.FileStorage.Core</AssemblyName>
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -44,7 +44,7 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
-    <PackageReference Include="Npgsql" Version="7.0.2" />
+    <PackageReference Include="Npgsql" Version="6.0.0" />
 	<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
   </ItemGroup>
 
