@@ -15,7 +15,7 @@
 	<RepositoryUrl>https://github.com/eugenetomes/PostgreSQLDatabaseFileStorage</RepositoryUrl>
 	<PackageTags>aspnet asp.net aspnetcore asp.net core postgresql filestorage</PackageTags>
 	<PackageReleaseNotes>Revert Npgsql dependency to 6</PackageReleaseNotes>
-	<Version>1.0.8</Version>
+	<Version>1.0.9</Version>
 	<AssemblyName>PostgreSQL.FileStorage.Core</AssemblyName>
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
