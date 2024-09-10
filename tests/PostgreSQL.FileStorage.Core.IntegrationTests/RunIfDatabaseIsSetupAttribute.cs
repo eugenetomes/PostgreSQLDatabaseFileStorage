@@ -1,25 +1,19 @@
-﻿using NUnit.Framework.Interfaces;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 
-namespace PostgreSQL.FileStorage.Core.IntegrationTests
+namespace PostgreSQL.FileStorage.Core.IntegrationTests;
+
+public class RunIfDatabaseIsSetupAttribute : Attribute, ITestAction
 {
-    public class RunIfDatabaseIsSetupAttribute : Attribute, ITestAction
+    public ActionTargets Targets { get; private set; }
+
+    public void AfterTest(ITest test) { }
+
+    public void BeforeTest(ITest test)
     {
-        public ActionTargets Targets { get; private set; }
-
-        public void AfterTest(ITest test) { }
-
-        public void BeforeTest(ITest test)
+        if (!TestHelper.RunIfDatabaseIsSetup())
         {
-            if (!TestHelper.RunIfDatabaseIsSetup())
-            {
-                Assert.Ignore("Omitting {0}. Database is not setup.", test.Name);
-            }
+            Assert.Ignore("Omitting {0}. Database is not setup.");
         }
     }
 }
