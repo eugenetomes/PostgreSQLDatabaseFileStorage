@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<PackageId>PostgreSQL.FileStorage</PackageId>
@@ -15,7 +15,7 @@
 	<RepositoryUrl>https://github.com/eugenetomes/PostgreSQLDatabaseFileStorage</RepositoryUrl>
 	<PackageTags>aspnet asp.net aspnetcore asp.net core postgresql filestorage</PackageTags>
 	<PackageReleaseNotes>Revert Npgsql dependency to 6</PackageReleaseNotes>
-	<Version>1.0.6</Version>
+	<Version>1.0.8</Version>
 	<AssemblyName>PostgreSQL.FileStorage.Core</AssemblyName>
 	<PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -43,9 +43,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.0.123" />
-    <PackageReference Include="Npgsql" Version="6.0.0" />
-	<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Npgsql" Version="8.0.3" />
+	<PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
